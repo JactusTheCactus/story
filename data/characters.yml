@@ -1,13 +1,13 @@
 characters:
   - <<: *character
     name: *o
+    monikers: [The Raven's Gold]
     relationships:
       - Elder brother of Silas
-      - Widower of unnamed woman, killed by Silas
+      - Widower of Rose, killed by Silas
   - <<: *character
     name: *s
-    monikers:
-      - Judas
+    monikers: [Judas]
     relationships:
       - Younger brother of Ori
-      - Killer of Ori's unnamed lover
+      - Killer of Rose
