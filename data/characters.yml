@@ -1,0 +1,13 @@
+characters:
+  - <<: *character
+    name: *o
+    relationships:
+      - Elder brother of Silas
+      - Widower of unnamed woman, killed by Silas
+  - <<: *character
+    name: *s
+    monikers:
+      - Judas
+    relationships:
+      - Younger brother of Ori
+      - Killer of Ori's unnamed lover

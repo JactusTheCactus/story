@@ -1,0 +1,7 @@
+_:
+  - &o Ori del Corvo
+  - &s Silas della Colombo
+  - &character
+    name: !!str
+    monikers: []
+    relationships: []
