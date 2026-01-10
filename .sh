@@ -66,4 +66,4 @@ toggles[plot]=true
 	exit 1
 }
 cp README.md index.html
-find . -empty -delete
+find . -path "*/data/*" -name "*.json" -o -empty -delete
