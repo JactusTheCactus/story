@@ -10,7 +10,7 @@ flag() {
 DIRS=(tmp logs)
 mkdir -p "${DIRS[@]}"
 trap "rm -rf tmp" EXIT
-exec &> logs/main.log
+flag local && exec &> logs/main.log
 [[ -f $yml ]] && {
 	while read -r f
 		do
