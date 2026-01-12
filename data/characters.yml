@@ -1,7 +1,9 @@
 characters:
   - <<: *character
     name: *o
-    monikers: [The Raven's Gold]
+    monikers:
+      - The Raven's Gold
+      - The Bird of Hermes
     relationships:
       - Elder brother of Silas
       - Widower of Rose, killed by Silas
