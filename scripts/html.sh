@@ -2,7 +2,7 @@
 set -euo pipefail
 case $1 in
 	br|hr)
-		printf '<%s>' "$1"
+		printf '<%s/>' "$1"
 	;;
 	*)
 		tag="$1"
