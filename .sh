@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
-yml="./scripts/yml.sh"
-html="./scripts/html.sh"
+script() {
+	printf './scripts/%s.sh' "$1"
+}
+yml="`script yml`"
+html="`script html`"
 flag() {
 	for f in "$@"
 		do [[ -e ".flags/$f" ]] || return 1
