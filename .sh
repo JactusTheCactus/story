@@ -11,7 +11,7 @@ DIRS=(tmp logs)
 mkdir -p "${DIRS[@]}"
 trap "rm -rf tmp" EXIT
 flag local && exec &> logs/main.log
-[[ -f $yml ]] && {
+if [[ -f $yml ]]; then
 	while read -r f
 		do
 			f="${f#data/}"
@@ -22,10 +22,10 @@ flag local && exec &> logs/main.log
 		! -name config.yml \
 		| sort
 	)
-} || {
+else
 	echo "'$yml' not found" >&2
 	exit 1
-}
+fi
 declare -A toggles
 toggles[details]=true
 toggles[plot]=true
